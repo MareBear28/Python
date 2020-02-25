@@ -1,4 +1,7 @@
+#car 1's milage
 car_milage1 = int(input('Enter car 1\'s milage: '))
+#following code is for checking if the input is valid or not
+#this will be used in all of the other inputs
 validate1 = True
 while validate1:
     if car_milage1 < 0:
@@ -9,6 +12,7 @@ while validate1:
     else:
         validate1 = False
 
+#car 2's milage        
 car_milage2 = int(input('Enter car 2\'s milage: '))
 print()
 validate2 = True
@@ -21,6 +25,7 @@ while validate2:
     else:
         validate2 = False
 
+#cost of gas per gallon of car 1
 car_cost_gallon1 = float(input('Enter car 1\'s average gas cost per gallon: '))
 check = True
 while check:
@@ -32,6 +37,7 @@ while check:
     else:
         check = False
 
+#cost of gas per gallon of car 2
 car_cost_gallon2 = float(input('Enter car 2\'s average gas cost per gallon: '))
 check2 = True
 while check2:
@@ -43,6 +49,7 @@ while check2:
     else:
         check2 = False
 
+#Miles the user drives per month        
 miles_month = int(input('How many miles do you drive a month?: '))
 check3 = True
 while check3:
@@ -54,6 +61,7 @@ while check3:
     else:
         check3 = False
 
+#calculate the total of cost per car to see which car costs more to drive        
 total_car1 = ((miles_month * 12) * car_cost_gallon1) / car_milage1
 total_car2 = ((miles_month * 12) * car_cost_gallon2) / car_milage2
 difference = 0
