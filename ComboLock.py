@@ -28,5 +28,5 @@ while not correct:
             correct = False
             break
     else:
-        print('Correct! You have won an A in CECS 174.')
+        print('Correct!')
         break
