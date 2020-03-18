@@ -1,9 +1,11 @@
+#following function is to get the reversed version of the binary
 def integer_to_reverse_binary(integer_value):
     binary = ''
     while integer_value > 0:
         binary += str(integer_value % 2)
         integer_value = integer_value // 2
     return binary
+#following function is to reverse the reversed binary from earlier
 def reverse_string(input_string):
     length = len(str(input_string))
     new = ''
